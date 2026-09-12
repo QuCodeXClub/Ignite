@@ -7,16 +7,16 @@ import logo from '../assets/ignite-logo.svg';
 const getCategoryIcon = (category) => {
   switch (category?.toLowerCase()) {
     case 'coding':
-      return <Terminal className="w-5 h-5" />;
+      return <Terminal className="w-3 h-3" />;
     case 'gaming':
-      return <Gamepad2 className="w-5 h-5" />;
+      return <Gamepad2 className="w-3 h-3" />;
     case 'exhibition':
     case 'showcase':
-      return <Presentation className="w-5 h-5" />;
+      return <Presentation className="w-3 h-3" />;
     case 'fun':
     case 'webinar':
     default:
-      return <Lightbulb className="w-5 h-5" />;
+      return <Lightbulb className="w-3 h-3" />;
   }
 };
 
@@ -26,7 +26,7 @@ const EventCard = ({ event, onClick }) => {
   return (
     <div
       onClick={() => onClick(event)}
-      className="group relative bg-[#0d0d0d] border border-[var(--color-border-light)] rounded-2xl cursor-pointer flex flex-col transition-all duration-300 ease-out hover:-translate-y-1.5 hover:border-[var(--color-accent)]/50 hover:shadow-[0_0_0_1px_rgba(6,190,252,0.15),0_12px_40px_-8px_rgba(6,190,252,0.18),0_4px_16px_rgba(0,0,0,0.6)]"
+      className="group relative bg-[#0d0d0d] border border-[var(--color-border-light)] rounded-2xl cursor-pointer flex flex-col transition-all duration-300 ease-out hover:-translate-y-1.5 hover:border-[var(--color-accent)]/50 hover:shadow-[0_0_0_1px_rgba(6,190,252,0.15),0_12px_40px_-8px_rgba(6,190,252,0.18),0_4px_16px_rgba(0,0,0,0.6)] h-full"
     >
       {/* Image container — isolated overflow so shadow on outer card is never clipped */}
       {event.image && (
@@ -40,26 +40,26 @@ const EventCard = ({ event, onClick }) => {
           {/* Bottom fade so image blends into card body */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-transparent to-transparent" />
           {/* Category badge */}
-          <div className="absolute top-2.5 left-2.5 flex items-center gap-1 bg-black/70 backdrop-blur-md border border-white/10 text-[var(--color-accent)] text-[10px] font-mono font-semibold uppercase tracking-widest px-2 py-0.5 rounded-full">
-            <span className="w-3 h-3 flex-shrink-0">{getCategoryIcon(event.category)}</span>
-            {event.category}
+          <div className="absolute top-2.5 left-2.5 flex items-center gap-1 bg-black/70 backdrop-blur-md border border-white/10 text-[var(--color-accent)] text-[9px] sm:text-[10px] font-mono font-semibold uppercase tracking-widest px-2 py-0.5 rounded-full">
+            <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 flex-shrink-0">{getCategoryIcon(event.category)}</span>
+            <span className="truncate max-w-[60px] sm:max-w-none">{event.category}</span>
           </div>
           {/* Day badge */}
-          <div className="absolute top-2.5 right-2.5 bg-[var(--color-accent)]/15 border border-[var(--color-accent)]/30 text-[var(--color-accent)] text-[10px] font-mono font-bold px-2 py-0.5 rounded-full">
+          <div className="absolute top-2.5 right-2.5 bg-[var(--color-accent)]/15 border border-[var(--color-accent)]/30 text-[var(--color-accent)] text-[9px] sm:text-[10px] font-mono font-bold px-2 py-0.5 rounded-full">
             {event.day}
           </div>
         </div>
       )}
 
       {/* Body */}
-      <div className="flex flex-col gap-2.5 p-3.5">
+      <div className="flex flex-col gap-2 p-2.5 sm:p-3.5 flex-1">
         {/* Title */}
-        <h4 className="text-sm font-bold text-white font-['Space_Grotesk'] group-hover:text-[var(--color-accent)] transition-colors duration-200 leading-snug line-clamp-2">
+        <h4 className="text-xs sm:text-sm font-bold text-white font-['Space_Grotesk'] group-hover:text-[var(--color-accent)] transition-colors duration-200 leading-snug line-clamp-2">
           {event.name}
         </h4>
 
         {/* Meta row */}
-        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-[var(--color-secondary-text)] font-mono">
+        <div className="flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-x-3 gap-y-1 text-[10px] sm:text-[11px] text-[var(--color-secondary-text)] font-mono mt-auto pt-1">
           <span className="flex items-center gap-1 min-w-0">
             <Clock className="w-2.5 h-2.5 text-[var(--color-accent)] shrink-0" />
             <span className="truncate">{event.time}</span>
@@ -67,13 +67,13 @@ const EventCard = ({ event, onClick }) => {
           {event.venue && (
             <span className="flex items-center gap-1 min-w-0">
               <MapPin className="w-2.5 h-2.5 text-[var(--color-accent)] shrink-0" />
-              <span className="truncate">{event.venue}</span>
+              <span className="truncate max-w-[100px]">{event.venue}</span>
             </span>
           )}
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-[var(--color-border-light)] mx-0.5" />
+        <div className="h-px bg-[var(--color-border-light)] mx-0.5 my-1" />
 
         {/* Action */}
         {isRegOpen ? (
@@ -82,17 +82,17 @@ const EventCard = ({ event, onClick }) => {
             onClick={(e) => e.stopPropagation()}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full flex items-center justify-center gap-1.5 py-1.5 text-[11px] font-bold bg-[var(--color-accent)] text-black rounded-lg transition-all duration-200 hover:bg-white"
+            className="w-full flex items-center justify-center gap-1 sm:gap-1.5 py-1.5 text-[10px] sm:text-[11px] font-bold bg-[var(--color-accent)] text-black rounded-lg transition-all duration-200 hover:bg-white"
           >
-            Register Now <ExternalLink className="w-2.5 h-2.5" />
+            Register <ExternalLink className="w-2.5 h-2.5 hidden sm:block" />
           </a>
         ) : (
           <button
             disabled
             onClick={(e) => e.stopPropagation()}
-            className="w-full flex items-center justify-center py-1.5 text-[11px] font-semibold bg-[#161616] text-[#444] rounded-lg cursor-not-allowed border border-[#222]"
+            className="w-full flex items-center justify-center py-1.5 text-[10px] sm:text-[11px] font-semibold bg-[#161616] text-[#444] rounded-lg cursor-not-allowed border border-[#222]"
           >
-            Registration Closed
+            Closed
           </button>
         )}
       </div>
@@ -205,38 +205,52 @@ const EventModal = ({ event, onClose }) => {
 };
 
 const Events = () => {
-  const day1Events = data.events.filter(e => e.day === "Day 1");
-  const day2Events = data.events.filter(e => e.day === "Day 2");
   const [selectedEvent, setSelectedEvent] = useState(null);
 
+  const day1Events = data.events.filter(e => e.day === "Day 1");
+  const day2Events = data.events.filter(e => e.day === "Day 2");
+
   return (
-    <section className="px-8 py-12 md:px-16 bg-transparent relative z-10" id="events">
-      <div className="text-center mb-16">
+    <section className="px-4 py-12 md:px-16 bg-transparent relative z-10" id="events">
+      <div className="text-center mb-10">
         <div className="font-mono text-sm tracking-[0.3em] font-semibold mb-4 text-[var(--color-secondary-text)]">COMPETITIONS & SHOWCASES</div>
-        <h2 className="text-4xl md:text-6xl font-black tracking-tighter leading-none flex items-center justify-center gap-4 font-['Space_Grotesk'] text-white">
-          EVENTS <img src={logo} alt="Ignite Logo" className="h-10 md:h-16 w-auto -translate-y-1 drop-shadow-[0_0_15px_rgba(6,190,252,0.4)]" />
+        <h2 className="text-4xl md:text-6xl font-black tracking-tighter leading-none flex items-center justify-center gap-3 md:gap-4 font-['Space_Grotesk'] text-white">
+          EVENTS <img src={logo} alt="Ignite Logo" className="h-8 md:h-16 w-auto -translate-y-0.5 md:-translate-y-1 drop-shadow-[0_0_15px_rgba(6,190,252,0.4)]" />
         </h2>
       </div>
 
-      <div className="flex flex-col gap-16 max-w-7xl mx-auto">
+      <div className="flex flex-col gap-8 max-w-7xl mx-auto">
+        
+        {/* Day 1 Section */}
         <div>
-          <h3 className="text-3xl md:text-4xl font-extrabold mb-10 flex items-baseline gap-4 font-['Space_Grotesk'] text-white border-b border-[var(--color-border-light)] pb-4 inline-flex pr-12">
+          <h3 className="text-3xl md:text-4xl font-extrabold mb-8 flex items-baseline justify-center md:justify-start gap-4 font-['Space_Grotesk'] text-white border-b border-[var(--color-border-light)] pb-4">
             Day 1 <span className="text-xl font-medium text-[var(--color-accent)] font-mono">— 15 Sep</span>
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5">
+          <div className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-5 w-full">
             {day1Events.map((event) => (
-              <EventCard key={event.id} event={event} onClick={setSelectedEvent} />
+              <div
+                key={event.id}
+                className="w-[calc(50%-8px)] md:w-[calc(33.333%-14px)] xl:w-[calc(25%-15px)]"
+              >
+                <EventCard event={event} onClick={setSelectedEvent} />
+              </div>
             ))}
           </div>
         </div>
 
+        {/* Day 2 Section */}
         <div>
-          <h3 className="text-3xl md:text-4xl font-extrabold mb-10 flex items-baseline gap-4 font-['Space_Grotesk'] text-white border-b border-[var(--color-border-light)] pb-4 inline-flex pr-12">
+          <h3 className="text-3xl md:text-4xl font-extrabold mb-8 flex items-baseline justify-center md:justify-start gap-4 font-['Space_Grotesk'] text-white border-b border-[var(--color-border-light)] pb-4">
             Day 2 <span className="text-xl font-medium text-[var(--color-accent)] font-mono">— 16 Sep</span>
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5">
+          <div className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-5 w-full">
             {day2Events.map((event) => (
-              <EventCard key={event.id} event={event} onClick={setSelectedEvent} />
+              <div
+                key={event.id}
+                className="w-[calc(50%-8px)] md:w-[calc(33.333%-14px)] xl:w-[calc(25%-15px)]"
+              >
+                <EventCard event={event} onClick={setSelectedEvent} />
+              </div>
             ))}
           </div>
         </div>

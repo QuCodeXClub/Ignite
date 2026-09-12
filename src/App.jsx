@@ -5,6 +5,7 @@ import Events from './components/Events';
 import Schedule from './components/Schedule';
 import Sponsors from './components/Sponsors';
 import SponsorStrip from './components/SponsorStrip';
+import OrganizedBy from './components/OrganizedBy';
 import Footer from './components/Footer';
 import HeroModel from './components/HeroModel';
 
@@ -33,6 +34,7 @@ function App() {
         <Schedule />
         <Sponsors />
         <About />
+        <OrganizedBy />
         <Footer />
       </div>
       
