@@ -143,9 +143,6 @@ const Embers = () => {
     </instancedMesh>
   );
 };
-
-// Scene: no scroll tracking, no scroll-based velocity, no scroll-based speed changes.
-// Position and scale are set once based on viewport and never animated reactively.
 const Scene = () => {
   const { viewport } = useThree();
   const isMobile = viewport.width < 12;
@@ -157,11 +154,17 @@ const Scene = () => {
 
   useFrame((state, delta) => {
     if (groupRef.current) {
-      // Constant rotation only — no scroll influence
+      const scrollY = window.scrollY;
+      const maxOffset = viewport.width * 0.35; 
+      
+      let currentTargetX;
+      if (isMobile) {
+        currentTargetX = Math.sin(scrollY * 0.002) * maxOffset;
+      } else {
+        currentTargetX = Math.cos(scrollY * 0.0015) * maxOffset;
+      }
       groupRef.current.rotation.y -= 0.25 * delta;
-
-      // Smoothly settle into position once on mount, then stays fixed
-      groupRef.current.position.x = THREE.MathUtils.damp(groupRef.current.position.x, targetX, 1.2, delta);
+      groupRef.current.position.x = THREE.MathUtils.damp(groupRef.current.position.x, currentTargetX, 2, delta);
       groupRef.current.position.y = THREE.MathUtils.damp(groupRef.current.position.y, targetY, 1.2, delta);
       groupRef.current.scale.x = THREE.MathUtils.damp(groupRef.current.scale.x, targetScale, 1.2, delta);
       groupRef.current.scale.y = THREE.MathUtils.damp(groupRef.current.scale.y, targetScale, 1.2, delta);

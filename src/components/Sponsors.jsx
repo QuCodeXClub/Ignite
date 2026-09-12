@@ -40,7 +40,7 @@ const Sponsors = () => (
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-[140px] h-[110px] md:w-[160px] md:h-[120px] bg-[#111] border border-[var(--color-border-light)] rounded-xl hover:-translate-y-1.5 hover:border-[var(--color-accent)] hover:shadow-[0_8px_24px_rgba(6,190,252,0.12)] transition-all duration-300 group p-5"
+            className="flex items-center justify-center w-[140px] h-[110px] md:w-[160px] md:h-[120px] bg-black/40 backdrop-blur-md border border-white/10 rounded-xl hover:-translate-y-1.5 hover:border-[var(--color-accent)] hover:shadow-[0_8px_24px_rgba(6,190,252,0.12)] transition-all duration-300 group p-5"
           >
             <img
               src={sponsor.logo}

@@ -26,7 +26,7 @@ const EventCard = ({ event, onClick }) => {
   return (
     <div
       onClick={() => onClick(event)}
-      className="group relative bg-[#0d0d0d] border border-[var(--color-border-light)] rounded-2xl cursor-pointer flex flex-col transition-all duration-300 ease-out hover:-translate-y-1.5 hover:border-[var(--color-accent)]/50 hover:shadow-[0_0_0_1px_rgba(6,190,252,0.15),0_12px_40px_-8px_rgba(6,190,252,0.18),0_4px_16px_rgba(0,0,0,0.6)] h-full"
+      className="group relative bg-black/40 backdrop-blur-md border border-white/10 rounded-2xl cursor-pointer flex flex-col transition-all duration-300 ease-out hover:-translate-y-1.5 hover:border-[var(--color-accent)]/50 hover:shadow-[0_0_0_1px_rgba(6,190,252,0.15),0_12px_40px_-8px_rgba(6,190,252,0.18),0_4px_16px_rgba(0,0,0,0.6)] h-full"
     >
       {/* Image container — isolated overflow so shadow on outer card is never clipped */}
       {event.image && (
@@ -38,7 +38,7 @@ const EventCard = ({ event, onClick }) => {
             loading="lazy"
           />
           {/* Bottom fade so image blends into card body */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
           {/* Category badge */}
           <div className="absolute top-2.5 left-2.5 flex items-center gap-1 bg-black/70 backdrop-blur-md border border-white/10 text-[var(--color-accent)] text-[9px] sm:text-[10px] font-mono font-semibold uppercase tracking-widest px-2 py-0.5 rounded-full">
             <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 flex-shrink-0">{getCategoryIcon(event.category)}</span>
@@ -123,7 +123,7 @@ const EventModal = ({ event, onClose }) => {
       ></div>
       
       {/* Modal Content */}
-      <div className="relative bg-[#0a0a0a] border border-[var(--color-border-light)] w-full max-w-2xl rounded-xl shadow-[0_0_40px_rgba(6,190,252,0.15)] flex flex-col max-h-[90vh] overflow-hidden animate-in fade-in zoom-in-95 duration-300">
+      <div className="relative bg-black/50 backdrop-blur-xl border border-white/10 w-full max-w-2xl rounded-xl shadow-[0_0_40px_rgba(6,190,252,0.15)] flex flex-col max-h-[90vh] overflow-hidden animate-in fade-in zoom-in-95 duration-300">
         <button 
           onClick={onClose}
           className="absolute top-4 right-4 p-2 text-white hover:text-[var(--color-accent)] transition-colors rounded-full hover:bg-black/50 z-30 backdrop-blur-md"
@@ -156,7 +156,7 @@ const EventModal = ({ event, onClose }) => {
               {event.name}
             </h2>
             
-            <div className="flex flex-wrap gap-4 sm:gap-8 border-y border-[var(--color-border-light)] py-4 my-2 font-mono text-sm bg-[#0a0a0a]/80 backdrop-blur-sm">
+            <div className="flex flex-wrap gap-4 sm:gap-8 border-y border-white/10 py-4 my-2 font-mono text-sm bg-black/40 backdrop-blur-md text-white shadow-sm">
               <div className="flex items-center gap-2 text-white">
                 <Clock className="w-4 h-4 text-[var(--color-accent)]" />
                 <span>{event.day}, {event.date} <br className="sm:hidden" /> {event.time}</span>
