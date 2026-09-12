@@ -31,7 +31,8 @@
       "venue": "Shyamji Auditorium",
       "description": "A hackathon to build innovative solutions for real-world problems.",
       "category": "Coding",
-      "registrationLink": ""
+      "buttonText": "Visit",
+      "registrationLink": "https://techthrive.qucodex.com"
     },
     {
       "id": "product-expo",
@@ -47,14 +48,15 @@
     },
     {
       "id": "hp-exhibition",
-      "image": "https://res.cloudinary.com/fswmfdcp/image/upload/f_auto,q_auto,w_800/v1789240860/images_vzx3ge.jpg",
+      "image": "https://res.cloudinary.com/fswmfdcp/image/upload/v1789247280/hp_pic_1_mxdp9h.webp",
       "name": "HP Exhibition",
       "date": "15 Sep 2026",
       "day": "Day 1",
       "time": "12:00 PM – 4:00 PM",
       "venue": "Outside Central Library",
-      "description": "Experience the latest technology and hardware from HP.",
+      "description": "Experience the latest technology and hardware from HP. Open to all university students.",
       "category": "Exhibition",
+      "isOpenToAll": true,
       "registrationLink": ""
     },
     {
@@ -79,7 +81,8 @@
       "venue": "Unity Hall",
       "description": "Smart India Hackathon awareness and preparation webinar.",
       "category": "Webinar",
-      "registrationLink": ""
+      "buttonText": "Visit",
+      "registrationLink": "https://qucodex.com/events"
     },
     {
       "id": "bgmi-tournament",
@@ -101,8 +104,9 @@
       "day": "Day 2",
       "time": "12:00 PM – 4:00 PM",
       "venue": "Central Library",
-      "description": "Experience the latest technology and hardware from HP.",
+      "description": "Experience the latest technology and hardware from HP. Open to all university students.",
       "category": "Exhibition",
+      "isOpenToAll": true,
       "registrationLink": ""
     },
     {

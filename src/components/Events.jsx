@@ -80,8 +80,15 @@ const EventCard = ({ event, onClick }) => {
             rel="noopener noreferrer"
             className="w-full flex items-center justify-center gap-1 sm:gap-1.5 py-1.5 text-[10px] sm:text-[11px] font-bold bg-[var(--color-accent)] text-black rounded-lg transition-all duration-200 hover:bg-white"
           >
-            Register <ExternalLink className="w-2.5 h-2.5 hidden sm:block" />
+            {event.buttonText || "Register"} <ExternalLink className="w-2.5 h-2.5 hidden sm:block" />
           </a>
+        ) : event.isOpenToAll ? (
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="w-full flex items-center justify-center py-1.5 text-[10px] sm:text-[11px] font-semibold bg-[#222] text-[#fff] rounded-lg border border-[#333]"
+          >
+            Open to All
+          </div>
         ) : (
           <button
             disabled
@@ -181,8 +188,14 @@ const EventModal = ({ event, onClose }) => {
                   rel="noopener noreferrer" 
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-4 bg-[var(--color-accent)] text-black font-bold rounded-sm transition-all hover:bg-white hover:shadow-[0_0_20px_rgba(255,255,255,0.4)] text-lg group"
                 >
-                  Register Now <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  {event.buttonText || "Register Now"} <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
+              ) : event.isOpenToAll ? (
+                <div 
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-4 bg-[#222] text-[#fff] font-semibold rounded-sm border border-[#333] text-lg"
+                >
+                  Open to All
+                </div>
               ) : (
                 <button 
                   disabled
