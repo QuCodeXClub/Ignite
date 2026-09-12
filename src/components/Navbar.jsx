@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-brand">
         <Flame size={24} fill="#ff5722" color="#ff5722" strokeWidth={0} />
-        IGNITE '25
+        IGNITE '26
       </div>
       
       <div className="nav-links">
