@@ -20,10 +20,8 @@ const logos = [
 ];
 
 const SponsorStrip = () => (
-  <a
-    href="#sponsors"
-    aria-label="View our sponsors"
-    className="relative z-10 block w-full bg-[#0a0a0a] border-y border-[var(--color-border-light)] hover:bg-[#0f0f0f] transition-colors duration-200 group cursor-pointer"
+  <div
+    className="relative z-10 block w-full bg-[#0a0a0a] border-y border-[var(--color-border-light)] hover:bg-[#0f0f0f] transition-colors duration-200 group"
   >
     <div className="max-w-7xl mx-auto px-6 md:px-16 py-4 flex items-center gap-6">
       {/* Label */}
@@ -38,23 +36,23 @@ const SponsorStrip = () => (
       <div className="flex-1 overflow-x-auto overflow-y-hidden scrollbar-none">
         <div className="flex items-center gap-8 min-w-max md:min-w-0 md:justify-between py-0.5">
           {logos.map((logo) => (
-            <img
-              key={logo.name}
-              src={logo.src}
-              alt={logo.name}
-              className="h-5 md:h-6 w-auto object-contain filter grayscale opacity-50 group-hover:opacity-75 transition-opacity duration-200 shrink-0"
-            />
+            <a key={logo.name} href="#" target="_blank" rel="noopener noreferrer" className="shrink-0">
+              <img
+                src={logo.src}
+                alt={logo.name}
+                className="h-5 md:h-6 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-200"
+              />
+            </a>
           ))}
         </div>
       </div>
 
       {/* Arrow hint */}
-      <ChevronRight
-        size={15}
-        className="shrink-0 text-[var(--color-secondary-text)] group-hover:text-[var(--color-accent)] group-hover:translate-x-0.5 transition-all duration-200"
-      />
+      <a href="#sponsors" aria-label="View our sponsors" className="shrink-0 text-[var(--color-secondary-text)] hover:text-[var(--color-accent)] transition-all duration-200 cursor-pointer flex items-center group-hover:translate-x-0.5">
+        <ChevronRight size={15} />
+      </a>
     </div>
-  </a>
+  </div>
 );
 
 export default SponsorStrip;

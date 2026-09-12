@@ -1,6 +1,6 @@
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { Float, RoundedBox, Environment } from '@react-three/drei';
-import { useRef, useMemo, useEffect, useState } from 'react';
+import { useRef, useMemo } from 'react';
 import * as THREE from 'three';
 
 const CubeCluster = () => {
@@ -44,7 +44,7 @@ const CubeCluster = () => {
     return arr;
   }, []);
 
-  useFrame((state) => {
+  useFrame(() => {
     if (groupRef.current) {
       groupRef.current.rotation.y -= 0.003;
     }
@@ -104,7 +104,6 @@ const Embers = () => {
         factor: Math.random() * 0.5 + 0.5,
         speed: Math.random() * 0.01 + 0.005,
         xFactor: Math.random() * 2 - 1,
-        yFactor: Math.random() * 2 - 1,
         zFactor: Math.random() * 2 - 1,
       });
     }
@@ -113,14 +112,12 @@ const Embers = () => {
 
   useFrame(() => {
     particles.forEach((particle, i) => {
-      let { position, speed, xFactor, yFactor, zFactor } = particle;
+      let { position, speed, xFactor, zFactor } = particle;
 
-      // Embers floating upwards and outwards
       position[1] += speed * 2;
       position[0] += speed * xFactor;
       position[2] += speed * zFactor;
 
-      // Reset if it goes too far
       if (position[1] > 5 || position[0] > 5 || position[0] < -5 || position[2] > 5 || position[2] < -5) {
         position[0] = (Math.random() - 0.5) * 2;
         position[1] = (Math.random() - 0.5) * 2;
@@ -128,7 +125,6 @@ const Embers = () => {
       }
 
       dummy.position.set(position[0], position[1], position[2]);
-      // Small scale for embers
       const scale = particle.factor * 0.05;
       dummy.scale.set(scale, scale, scale);
       dummy.rotation.x += speed;
@@ -143,62 +139,33 @@ const Embers = () => {
   return (
     <instancedMesh ref={mesh} args={[null, null, count]}>
       <boxGeometry args={[1, 1, 1]} />
-      {/* Glow material for embers */}
       <meshBasicMaterial color="#ffffff" toneMapped={false} />
     </instancedMesh>
   );
 };
 
+// Scene: no scroll tracking, no scroll-based velocity, no scroll-based speed changes.
+// Position and scale are set once based on viewport and never animated reactively.
 const Scene = () => {
   const { viewport } = useThree();
   const isMobile = viewport.width < 12;
   const groupRef = useRef();
 
-  const [scrollProgress, setScrollProgress] = useState(0);
-  const scrollYRef = useRef(0);
-  const scrollVelocity = useRef(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      scrollYRef.current = window.scrollY;
-
-      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const progress = totalHeight > 0 ? window.scrollY / totalHeight : 0;
-      setScrollProgress(progress);
-    };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const targetX = isMobile ? 0 : viewport.width * 0.25;
+  const targetY = isMobile ? -0.8 : 0;
+  const targetScale = isMobile ? 0.7 : 1.1;
 
   useFrame((state, delta) => {
     if (groupRef.current) {
-      // 1. Calculate Scroll Velocity for Rotation Boost
-      const currentScroll = scrollYRef.current;
-      const velocityTarget = currentScroll - (groupRef.current.userData.lastScroll || currentScroll);
-      groupRef.current.userData.lastScroll = currentScroll;
+      // Constant rotation only — no scroll influence
+      groupRef.current.rotation.y -= 0.25 * delta;
 
-      // Smoothly dampen the velocity so acceleration and deceleration feel organic
-      scrollVelocity.current = THREE.MathUtils.damp(scrollVelocity.current, velocityTarget, 2, delta);
-
-      // Natural base rotation + boost from scroll velocity
-      const rotationBoost = Math.abs(scrollVelocity.current) * 0.003;
-      const speedY = 0.25 + rotationBoost;
-
-      groupRef.current.rotation.y -= speedY * delta;
-
-      // 2. Static Position/Scale (No motion, only rotation)
-      const targetX = isMobile ? 0 : viewport.width * 0.25; // Centered on mobile, Right on desktop
-      const targetY = isMobile ? 1.5 : 0;
-      const targetScale = isMobile ? 0.7 : 1.1;
-
-      const dampFactor = 1.2;
-      groupRef.current.position.x = THREE.MathUtils.damp(groupRef.current.position.x, targetX, dampFactor, delta);
-      groupRef.current.position.y = THREE.MathUtils.damp(groupRef.current.position.y, targetY, dampFactor, delta);
-
-      groupRef.current.scale.x = THREE.MathUtils.damp(groupRef.current.scale.x, targetScale, dampFactor, delta);
-      groupRef.current.scale.y = THREE.MathUtils.damp(groupRef.current.scale.y, targetScale, dampFactor, delta);
-      groupRef.current.scale.z = THREE.MathUtils.damp(groupRef.current.scale.z, targetScale, dampFactor, delta);
+      // Smoothly settle into position once on mount, then stays fixed
+      groupRef.current.position.x = THREE.MathUtils.damp(groupRef.current.position.x, targetX, 1.2, delta);
+      groupRef.current.position.y = THREE.MathUtils.damp(groupRef.current.position.y, targetY, 1.2, delta);
+      groupRef.current.scale.x = THREE.MathUtils.damp(groupRef.current.scale.x, targetScale, 1.2, delta);
+      groupRef.current.scale.y = THREE.MathUtils.damp(groupRef.current.scale.y, targetScale, 1.2, delta);
+      groupRef.current.scale.z = THREE.MathUtils.damp(groupRef.current.scale.z, targetScale, 1.2, delta);
     }
   });
 
@@ -219,7 +186,6 @@ const HeroModel = () => {
       <Environment preset="city" />
       <ambientLight intensity={0.4} />
       <directionalLight position={[10, 20, 10]} intensity={1.5} color="#ffffff" />
-      {/* The cyan fill light */}
       <directionalLight position={[-10, -10, -10]} intensity={2.5} color="#06befc" />
       <Scene />
     </Canvas>
