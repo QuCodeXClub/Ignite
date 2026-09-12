@@ -21,16 +21,16 @@ const logos = [
 
 const SponsorStrip = () => (
   <div
-    className="relative z-10 block w-full bg-[#0a0a0a] border-y border-[var(--color-border-light)] hover:bg-[#0f0f0f] transition-colors duration-200 group"
+    className="relative z-10 block w-full bg-white/80 backdrop-blur-md border-y border-white/20 hover:bg-white/90 transition-colors duration-200 group"
   >
     <div className="max-w-7xl mx-auto px-6 md:px-16 py-4 flex items-center gap-6">
       {/* Label */}
-      <span className="text-[10px] font-mono tracking-[0.25em] font-semibold text-[var(--color-secondary-text)] uppercase shrink-0 whitespace-nowrap">
+      <span className="text-[10px] font-mono tracking-[0.25em] font-semibold text-black/60 uppercase shrink-0 whitespace-nowrap">
         Powered by
       </span>
 
       {/* Divider */}
-      <div className="w-px h-5 bg-[var(--color-border-light)] shrink-0" />
+      <div className="w-px h-5 bg-black/20 shrink-0" />
 
       {/* Logos — horizontally scrollable on mobile, natural flex on desktop */}
       <div className="flex-1 overflow-x-auto overflow-y-hidden scrollbar-none">
@@ -48,7 +48,7 @@ const SponsorStrip = () => (
       </div>
 
       {/* Arrow hint */}
-      <a href="#sponsors" aria-label="View our sponsors" className="shrink-0 text-[var(--color-secondary-text)] hover:text-[var(--color-accent)] transition-all duration-200 cursor-pointer flex items-center group-hover:translate-x-0.5">
+      <a href="#sponsors" aria-label="View our sponsors" className="shrink-0 text-black/50 hover:text-[var(--color-accent)] transition-all duration-200 cursor-pointer flex items-center group-hover:translate-x-0.5">
         <ChevronRight size={15} />
       </a>
     </div>

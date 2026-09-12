@@ -45,7 +45,7 @@ const Sponsors = () => (
             <img
               src={sponsor.logo}
               alt={sponsor.name}
-              className="max-w-[100px] max-h-[52px] w-auto h-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              className={`max-w-[100px] max-h-[52px] w-auto h-auto object-contain transition-transform duration-300 group-hover:scale-105 ${sponsor.name === 'CodeCrafters' ? 'brightness-0 invert' : ''}`}
             />
           </a>
         ))}

@@ -35,7 +35,7 @@
     },
     {
       "id": "product-expo",
-      "image": "https://res.cloudinary.com/ddfwdj4jn/image/upload/v1787475669/IMG_0627_rn1b2f.jpg",
+      "image": "https://res.cloudinary.com/fswmfdcp/image/upload/f_auto,q_auto,w_800/v1789240626/Copy_of_IMG20250915134055_abnxu8.heic",
       "name": "Product Expo",
       "date": "15 Sep 2026",
       "day": "Day 1",
@@ -66,18 +66,6 @@
       "time": "10:00 AM – 1:00 PM",
       "venue": "Lab 1",
       "description": "Competitive programming contest sponsored by GeeksforGeeks.",
-      "category": "Coding",
-      "registrationLink": ""
-    },
-    {
-      "id": "bsh-contest",
-      "image": "https://res.cloudinary.com/ddfwdj4jn/image/upload/f_auto,q_auto,w_800/v1787475669/IMG_0619_migrdi.jpg",
-      "name": "BSH Contest",
-      "date": "16 Sep 2026",
-      "day": "Day 2",
-      "time": "11:00 AM – 2:00 PM",
-      "venue": "Lab 2",
-      "description": "Brain Storming Hack contest focusing on algorithmic challenges.",
       "category": "Coding",
       "registrationLink": ""
     },
@@ -180,15 +168,6 @@
       "time": "10:00 AM – 4:00 PM",
       "activity": "BGMI Tournament",
       "venue": "Gaming Arena",
-      "type": "event"
-    },
-    {
-      "id": "s8",
-      "day": "Day 2",
-      "date": "16 Sep 2026",
-      "time": "11:00 AM – 2:00 PM",
-      "activity": "BSH Contest",
-      "venue": "Lab 2",
       "type": "event"
     },
     {
