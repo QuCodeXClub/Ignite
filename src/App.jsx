@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import HeroModel from './components/HeroModel';
 import AboutSection from './components/AboutSection';
 import EventsSection from './components/EventsSection';
+import ScheduleSection from './components/ScheduleSection';
 import Hero from './components/Hero';
 import FooterElements from './components/FooterElements';
 
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <AboutSection />
       <EventsSection />
+      <ScheduleSection />
       <FooterElements />
     </div>
   );
