@@ -1,4 +1,5 @@
 import { ArrowRight, ArrowDown, Calendar, MapPin, Flame } from 'lucide-react';
+import HeroModel from './HeroModel';
 
 const Hero = () => {
   return (
@@ -14,7 +15,7 @@ const Hero = () => {
           TE
         </h1>
         
-        <div className="hero-subtitle">The Technical Fest </div> 
+        <div className="hero-subtitle">A COLLEGE TECH & GAMING FEST</div>
         
         <p className="hero-desc">
           Where innovation meets adrenaline.<br/>
@@ -24,11 +25,11 @@ const Hero = () => {
         <div className="hero-meta">
           <div className="meta-item">
             <Calendar size={18} />
-            <span>15- 16 September, 2026 </span>
+            <span>15 – 17 Nov 2024</span>
           </div>
           <div className="meta-item">
             <MapPin size={18} />
-            <span>Quantum University, Roorkee</span>
+            <span>XYZ College Campus</span>
           </div>
         </div>
 
@@ -47,6 +48,10 @@ const Hero = () => {
           FEELING<br/>
           TOMORROW'S<br/>
           BUILDERS
+        </div>
+        
+        <div className="canvas-container">
+          <HeroModel />
         </div>
 
         <div className="side-list">
