@@ -1,0 +1,222 @@
+{
+  "hero": {
+    "eyebrow": "ENGINEERS' DAY CELEBRATION",
+    "heading": "Ignite 2026",
+    "subheading": "Celebrating Engineers' Day",
+    "description": "Join us on 15–16 September for two days of innovation, technology, competitions, and creativity.",
+    "dates": "15 – 16 Sep 2026",
+    "venue": "Quantum University",
+    "buttons": [
+      { "label": "Explore Events", "href": "#events", "primary": true },
+      { "label": "About Ignite", "href": "#about", "primary": false }
+    ],
+    "aboutPreview": "A premier technical celebration of innovation, engineering, and creativity — Ignite brings together the brightest minds to compete, build, and showcase.",
+    "collage": [
+      "https://res.cloudinary.com/fswmfdcp/image/upload/v1785170170/hackthon_ugz8gy.webp",
+      "https://res.cloudinary.com/ddfwdj4jn/image/upload/v1787475669/IMG_0627_rn1b2f.jpg",
+      "https://res.cloudinary.com/ddfwdj4jn/image/upload/f_auto,q_auto,w_800/v1787475669/IMG_6902_oyq9by.jpg",
+      "https://res.cloudinary.com/fswmfdcp/image/upload/v1785170227/webinar_ai3kg5.webp",
+      "https://res.cloudinary.com/fswmfdcp/image/upload/v1785170030/contest_he2oqd.webp",
+      "https://res.cloudinary.com/ddfwdj4jn/image/upload/f_auto,q_auto,w_800/v1787475669/IMG_0619_migrdi.jpg"
+    ]
+  },
+  "events": [
+    {
+      "id": "hackathon",
+      "image": "https://res.cloudinary.com/fswmfdcp/image/upload/v1785170170/hackthon_ugz8gy.webp",
+      "name": "Hackathon",
+      "date": "15 Sep 2026",
+      "day": "Day 1",
+      "time": "10:00 AM – 4:00 PM",
+      "venue": "Central Library",
+      "description": "A 6-hour intense hackathon to build innovative solutions for real-world problems.",
+      "category": "Coding",
+      "registrationLink": ""
+    },
+    {
+      "id": "product-expo",
+      "image": "https://res.cloudinary.com/ddfwdj4jn/image/upload/v1787475669/IMG_0627_rn1b2f.jpg",
+      "name": "Product Expo",
+      "date": "15 Sep 2026",
+      "day": "Day 1",
+      "time": "10:00 AM – 4:00 PM",
+      "venue": "Central Library",
+      "description": "Showcase your hardware or software products to industry experts.",
+      "category": "Exhibition",
+      "registrationLink": ""
+    },
+    {
+      "id": "hp-showcase",
+      "image": "https://res.cloudinary.com/ddfwdj4jn/image/upload/f_auto,q_auto,w_800/v1787475669/IMG_6902_oyq9by.jpg",
+      "name": "HP Showcase",
+      "date": "15 Sep 2026",
+      "day": "Day 1",
+      "time": "12:00 PM – 4:00 PM",
+      "venue": "Main Hall",
+      "description": "Experience the latest technology and hardware from HP.",
+      "category": "Showcase",
+      "registrationLink": ""
+    },
+    {
+      "id": "gfg-contest",
+      "image": "https://res.cloudinary.com/fswmfdcp/image/upload/v1785170030/contest_he2oqd.webp",
+      "name": "GFG Contest",
+      "date": "16 Sep 2026",
+      "day": "Day 2",
+      "time": "10:00 AM – 1:00 PM",
+      "venue": "Lab 1",
+      "description": "Competitive programming contest sponsored by GeeksforGeeks.",
+      "category": "Coding",
+      "registrationLink": ""
+    },
+    {
+      "id": "bsh-contest",
+      "image": "https://res.cloudinary.com/ddfwdj4jn/image/upload/f_auto,q_auto,w_800/v1787475669/IMG_0619_migrdi.jpg",
+      "name": "BSH Contest",
+      "date": "16 Sep 2026",
+      "day": "Day 2",
+      "time": "11:00 AM – 2:00 PM",
+      "venue": "Lab 2",
+      "description": "Brain Storming Hack contest focusing on algorithmic challenges.",
+      "category": "Coding",
+      "registrationLink": ""
+    },
+    {
+      "id": "bgmi-tournament",
+      "image": "https://res.cloudinary.com/ddfwdj4jn/image/upload/v1787475669/IMG_0627_rn1b2f.jpg",
+      "name": "BGMI Tournament",
+      "date": "16 Sep 2026",
+      "day": "Day 2",
+      "time": "10:00 AM – 4:00 PM",
+      "venue": "Gaming Arena",
+      "description": "Battle it out in the ultimate BGMI tournament for amazing prizes.",
+      "category": "Gaming",
+      "registrationLink": ""
+    },
+    {
+      "id": "tech-treasure-hunt",
+      "image": "https://res.cloudinary.com/ddfwdj4jn/image/upload/f_auto,q_auto,w_800/v1787475669/IMG_6902_oyq9by.jpg",
+      "name": "Technical Treasure Hunt",
+      "date": "16 Sep 2026",
+      "day": "Day 2",
+      "time": "2:00 PM – 4:00 PM",
+      "venue": "Campus Wide",
+      "description": "Solve technical puzzles to find the hidden treasure across the campus.",
+      "category": "Fun",
+      "registrationLink": ""
+    },
+    {
+      "id": "sih-webinar",
+      "image": "https://res.cloudinary.com/fswmfdcp/image/upload/v1785170227/webinar_ai3kg5.webp",
+      "name": "SIH Webinar",
+      "date": "16 Sep 2026",
+      "day": "Day 2",
+      "time": "3:00 PM – 4:00 PM",
+      "venue": "Auditorium",
+      "description": "Smart India Hackathon awareness and preparation webinar.",
+      "category": "Webinar",
+      "registrationLink": ""
+    }
+  ],
+  "schedule": [
+    {
+      "id": "s1",
+      "day": "Day 1",
+      "date": "15 Sep 2026",
+      "time": "10:00 AM – 11:00 AM",
+      "activity": "Inauguration Ceremony",
+      "venue": "Shyamji Auditorium",
+      "type": "ceremony"
+    },
+    {
+      "id": "s2",
+      "day": "Day 1",
+      "date": "15 Sep 2026",
+      "time": "11:00 AM – 2:00 PM",
+      "activity": "TechThrive 2026 Grand Finale",
+      "venue": "Shyamji Auditorium",
+      "type": "event"
+    },
+    {
+      "id": "s3",
+      "day": "Day 1",
+      "date": "15 Sep 2026",
+      "time": "10:00 AM – 4:00 PM",
+      "activity": "Hackathon & Product Expo",
+      "venue": "Central Library",
+      "type": "event"
+    },
+    {
+      "id": "s4",
+      "day": "Day 1",
+      "date": "15 Sep 2026",
+      "time": "12:00 PM – 4:00 PM",
+      "activity": "HP Showcase",
+      "venue": "Main Hall",
+      "type": "event"
+    },
+    {
+      "id": "s5",
+      "day": "Day 1",
+      "date": "15 Sep 2026",
+      "time": "2:00 PM – 4:00 PM",
+      "activity": "Judging & Evaluation",
+      "venue": "Respective Venues",
+      "type": "judging"
+    },
+    {
+      "id": "s6",
+      "day": "Day 2",
+      "date": "16 Sep 2026",
+      "time": "10:00 AM – 1:00 PM",
+      "activity": "GFG Contest",
+      "venue": "Lab 1",
+      "type": "event"
+    },
+    {
+      "id": "s7",
+      "day": "Day 2",
+      "date": "16 Sep 2026",
+      "time": "10:00 AM – 4:00 PM",
+      "activity": "BGMI Tournament",
+      "venue": "Gaming Arena",
+      "type": "event"
+    },
+    {
+      "id": "s8",
+      "day": "Day 2",
+      "date": "16 Sep 2026",
+      "time": "11:00 AM – 2:00 PM",
+      "activity": "BSH Contest",
+      "venue": "Lab 2",
+      "type": "event"
+    },
+    {
+      "id": "s9",
+      "day": "Day 2",
+      "date": "16 Sep 2026",
+      "time": "2:00 PM – 4:00 PM",
+      "activity": "Technical Treasure Hunt",
+      "venue": "Campus Wide",
+      "type": "event"
+    },
+    {
+      "id": "s10",
+      "day": "Day 2",
+      "date": "16 Sep 2026",
+      "time": "3:00 PM – 4:00 PM",
+      "activity": "SIH Webinar",
+      "venue": "Auditorium",
+      "type": "event"
+    },
+    {
+      "id": "s11",
+      "day": "Day 2",
+      "date": "16 Sep 2026",
+      "time": "4:00 PM – 5:00 PM",
+      "activity": "Valedictory & Prize Distribution",
+      "venue": "Shyamji Auditorium",
+      "type": "ceremony"
+    }
+  ]
+}
