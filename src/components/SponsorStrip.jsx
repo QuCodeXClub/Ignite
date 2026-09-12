@@ -1,0 +1,60 @@
+import React from 'react';
+import { ChevronRight } from 'lucide-react';
+
+import hp from '../assets/hp-logo.svg';
+import gfg from '../assets/gfg-logo.svg';
+import codecrafters from '../assets/codecrafters-logo.svg';
+import interviewBuddy from '../assets/interviewBuddy-logo.svg';
+import memcode from '../assets/memcode-logo.svg';
+import osen from '../assets/osen-logo.svg';
+import unstop from '../assets/unstop-logo.svg';
+
+const logos = [
+  { name: 'HP', src: hp },
+  { name: 'GeeksforGeeks', src: gfg },
+  { name: 'CodeCrafters', src: codecrafters },
+  { name: 'InterviewBuddy', src: interviewBuddy },
+  { name: 'Memcode', src: memcode },
+  { name: 'OSEN', src: osen },
+  { name: 'Unstop', src: unstop },
+];
+
+const SponsorStrip = () => (
+  <a
+    href="#sponsors"
+    aria-label="View our sponsors"
+    className="relative z-10 block w-full bg-[#0a0a0a] border-y border-[var(--color-border-light)] hover:bg-[#0f0f0f] transition-colors duration-200 group cursor-pointer"
+  >
+    <div className="max-w-7xl mx-auto px-6 md:px-16 py-4 flex items-center gap-6">
+      {/* Label */}
+      <span className="text-[10px] font-mono tracking-[0.25em] font-semibold text-[var(--color-secondary-text)] uppercase shrink-0 whitespace-nowrap">
+        Powered by
+      </span>
+
+      {/* Divider */}
+      <div className="w-px h-5 bg-[var(--color-border-light)] shrink-0" />
+
+      {/* Logos — horizontally scrollable on mobile, natural flex on desktop */}
+      <div className="flex-1 overflow-x-auto overflow-y-hidden scrollbar-none">
+        <div className="flex items-center gap-8 min-w-max md:min-w-0 md:justify-between py-0.5">
+          {logos.map((logo) => (
+            <img
+              key={logo.name}
+              src={logo.src}
+              alt={logo.name}
+              className="h-5 md:h-6 w-auto object-contain filter grayscale opacity-50 group-hover:opacity-75 transition-opacity duration-200 shrink-0"
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Arrow hint */}
+      <ChevronRight
+        size={15}
+        className="shrink-0 text-[var(--color-secondary-text)] group-hover:text-[var(--color-accent)] group-hover:translate-x-0.5 transition-all duration-200"
+      />
+    </div>
+  </a>
+);
+
+export default SponsorStrip;

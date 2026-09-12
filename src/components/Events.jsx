@@ -210,7 +210,7 @@ const Events = () => {
   const [selectedEvent, setSelectedEvent] = useState(null);
 
   return (
-    <section className="px-8 py-24 md:px-16 bg-transparent relative z-10" id="events">
+    <section className="px-8 py-12 md:px-16 bg-transparent relative z-10" id="events">
       <div className="text-center mb-16">
         <div className="font-mono text-sm tracking-[0.3em] font-semibold mb-4 text-[var(--color-secondary-text)]">COMPETITIONS & SHOWCASES</div>
         <h2 className="text-4xl md:text-6xl font-black tracking-tighter leading-none flex items-center justify-center gap-4 font-['Space_Grotesk'] text-white">

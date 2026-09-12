@@ -3,7 +3,7 @@ import logo from '../assets/ignite-logo.svg';
 
 const About = () => {
   return (
-    <section className="py-24 px-8 md:px-16 bg-transparent relative z-10" id="about">
+    <section className="py-12 px-8 md:px-16 bg-transparent relative z-10" id="about">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
         <div className="flex-1 flex flex-col items-start text-left">
           <div className="font-mono text-sm tracking-[0.3em] font-semibold mb-4 text-[var(--color-secondary-text)]">

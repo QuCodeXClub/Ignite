@@ -75,7 +75,7 @@ const Schedule = () => {
   const dateLabel = activeDay === 'Day 1' ? '15 Sep 2026' : '16 Sep 2026';
 
   return (
-    <section className="px-6 py-20 md:px-16 bg-transparent relative z-10" id="schedule">
+    <section className="px-6 py-10 md:px-16 bg-transparent relative z-10" id="schedule">
       {/* Section Header */}
       <div className="text-center mb-12">
         <div className="font-mono text-sm tracking-[0.3em] font-semibold mb-4 text-[var(--color-secondary-text)]">TIMELINE</div>

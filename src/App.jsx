@@ -4,6 +4,7 @@ import About from './components/About';
 import Events from './components/Events';
 import Schedule from './components/Schedule';
 import Sponsors from './components/Sponsors';
+import SponsorStrip from './components/SponsorStrip';
 import Footer from './components/Footer';
 import HeroModel from './components/HeroModel';
 
@@ -27,6 +28,7 @@ function App() {
           <Navbar />
           <Hero />
         </div>
+        <SponsorStrip />
         <Events />
         <Schedule />
         <Sponsors />

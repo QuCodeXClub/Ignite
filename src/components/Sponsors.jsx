@@ -22,11 +22,11 @@ const Sponsors = () => {
   ];
 
   return (
-    <section className="py-24 px-8 md:px-16 bg-transparent relative z-10" id="sponsors">
+    <section className="py-12 px-8 md:px-16 bg-transparent relative z-10" id="sponsors">
       <div className="max-w-6xl mx-auto flex flex-col items-center">
         
         {/* Hosted & Organized By */}
-        <div className="w-full flex flex-col md:flex-row gap-16 justify-center items-center mb-24 border-b border-[var(--color-border-light)] pb-24">
+        <div className="w-full flex flex-col md:flex-row gap-10 justify-center items-center mb-12 border-b border-[var(--color-border-light)] pb-12">
           <div className="flex flex-col items-center gap-6">
             <div className="font-mono text-sm tracking-[0.3em] font-semibold text-[var(--color-secondary-text)]">HOSTED BY</div>
             <img src={quantum} alt="Quantum University" className="h-20 w-auto hover:scale-105 transition-transform duration-300 opacity-80 hover:opacity-100" />
@@ -46,7 +46,7 @@ const Sponsors = () => {
         <div className="font-mono text-sm tracking-[0.3em] font-semibold mb-6 text-[var(--color-secondary-text)]">
           POWERED BY
         </div>
-        <h2 className="text-4xl md:text-5xl font-black tracking-tighter leading-none flex items-center justify-center font-['Space_Grotesk'] text-white mb-16 uppercase">
+        <h2 className="text-4xl md:text-5xl font-black tracking-tighter leading-none flex items-center justify-center font-['Space_Grotesk'] text-white mb-8 uppercase">
           Our Sponsors
         </h2>
 
