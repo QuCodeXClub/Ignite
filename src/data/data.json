@@ -29,7 +29,7 @@
       "day": "Day 1",
       "time": "9:00 AM – 3:00 PM",
       "venue": "Shyamji Auditorium",
-      "description": "A hackathon to build innovative solutions for real-world problems.",
+      "description": "TechTribe Grand Finale is the grand culmination of the Science Festival Hackathon, organized by Codex Club. With an overwhelming participation of 500+ students across 80 teams, the competition brings together the top 43 finalist teams for the ultimate showdown. At the Grand Finale, these 43 teams will compete head-to-head to showcase their innovative ideas, technical skills, and working solutions. It is a final test of creativity, problem-solving, collaboration, and innovation where the best teams will compete for the top honors.",
       "category": "Coding",
       "buttonText": "Visit",
       "registrationLink": "https://techthrive.qucodex.com"
@@ -42,7 +42,7 @@
       "day": "Day 1",
       "time": "10:00 AM – 4:00 PM",
       "venue": "Central Library",
-      "description": "Showcase your hardware or software products to industry experts.",
+      "description": "Project Expo is a flagship event organized under Ignite 2026 on the occasion of PGSJ, where every department gets an opportunity to showcase its best projects, innovative models, working prototypes, and creative posters. Departments will compete for the top prizes, celebrating innovation, technical knowledge, creativity, and teamwork. Every participant will receive a certificate of participation. The expo provides students with a platform to present their ideas, gain practical exposure, improve communication and presentation skills, receive valuable feedback, and inspire others through their innovative work.",
       "category": "Exhibition",
       "registrationLink": " https://forms.gle/hoAjF42YVcQzXTrVA"
     },
@@ -79,7 +79,7 @@
       "day": "Day 2",
       "time": "10:00 AM – 11:00 AM",
       "venue": "Unity Hall",
-      "description": "Smart India Hackathon awareness and preparation webinar.",
+      "description": "SIH Webinar will be organized by Codex Club for students and teams qualified for the Smart India Hackathon (SIH). The session will be led by an SIH-qualified team that was also a winner at SIH 2025, giving participants the opportunity to learn directly from their experience. The team will share practical insights on problem-solving, project development, pitching, team strategy, and hackathon preparation. It will also be an interactive session, allowing participants to ask questions, discuss challenges, and gain valuable guidance for the next stage of SIH.",
       "category": "Webinar",
       "buttonText": "Visit",
       "registrationLink": "https://qucodex.com/events"
@@ -117,7 +117,7 @@
       "day": "Day 1",
       "time": "5:00 PM – 7:00 PM",
       "venue": "Campus Wide",
-      "description": "Solve technical puzzles to find the hidden treasure across the campus.",
+      "description": "Technical Treasure Hunt is a fun and exciting challenge that combines technology, logic, teamwork, and quick thinking. Participants will solve a series of technical clues, puzzles, and challenges to uncover the final treasure. The event is designed to encourage problem-solving, communication, creativity, and collaboration while keeping everyone engaged in a competitive and entertaining environment. Whether you are highly technical or simply love challenges, this event offers a great opportunity to learn, interact, have fun, and compete with friends while putting your skills to the test.",
       "category": "Fun",
       "registrationLink": ""
     }
