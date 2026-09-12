@@ -29,7 +29,7 @@ function App() {
           <Navbar />
           <Hero />
         </div>
-        <div className="relative w-full bg-black/20 backdrop-blur-sm">
+        <div className="relative w-full bg-black/20 backdrop-blur-[2px]">
           <SponsorStrip />
           <Events />
           <Schedule />
