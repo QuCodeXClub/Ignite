@@ -47,7 +47,7 @@
     },
     {
       "id": "hp-showcase",
-      "image": "https://res.cloudinary.com/ddfwdj4jn/image/upload/f_auto,q_auto,w_800/v1787475669/IMG_6902_oyq9by.jpg",
+      "image": "https://res.cloudinary.com/fswmfdcp/image/upload/f_auto,q_auto,w_800/v1789240860/images_vzx3ge.jpg",
       "name": "HP Showcase",
       "date": "15 Sep 2026",
       "day": "Day 1",
@@ -67,7 +67,7 @@
       "venue": "Lab 1",
       "description": "Competitive programming contest sponsored by GeeksforGeeks.",
       "category": "Coding",
-      "registrationLink": ""
+      "registrationLink": "https://practice.geeksforgeeks.org/contest/dsa-under-ignite-2026"
     },
     {
       "id": "bgmi-tournament",
@@ -79,7 +79,7 @@
       "venue": "Gaming Arena",
       "description": "Battle it out in the ultimate BGMI tournament for amazing prizes.",
       "category": "Gaming",
-      "registrationLink": ""
+      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSctHTe8zMRGIGfFZHWypHXckSlM5sLJdY0lvOglJzPHjE3gpw/viewform?usp=publish-editor"
     },
     {
       "id": "tech-treasure-hunt",
@@ -87,7 +87,7 @@
       "name": "Technical Treasure Hunt",
       "date": "16 Sep 2026",
       "day": "Day 2",
-      "time": "2:00 PM – 4:00 PM",
+      "time": "5:00 PM – 7:00 PM",
       "venue": "Campus Wide",
       "description": "Solve technical puzzles to find the hidden treasure across the campus.",
       "category": "Fun",
