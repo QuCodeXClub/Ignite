@@ -29,13 +29,15 @@ function App() {
           <Navbar />
           <Hero />
         </div>
-        <SponsorStrip />
-        <Events />
-        <Schedule />
-        <Sponsors />
-        <About />
-        <OrganizedBy />
-        <Footer />
+        <div className="relative w-full bg-black/20 backdrop-blur-sm">
+          <SponsorStrip />
+          <Events />
+          <Schedule />
+          <Sponsors />
+          <About />
+          <OrganizedBy />
+          <Footer />
+        </div>
       </div>
       
     </div>

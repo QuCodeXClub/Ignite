@@ -45,7 +45,8 @@ const Footer = () => {
         <div className="flex flex-col gap-4">
           <h4 className="text-white font-bold font-mono tracking-widest text-sm mb-2">CONTACT</h4>
           <p className="text-sm">Quantum University Campus<br/>Roorkee, Uttarakhand</p>
-          <a href="mailto:info@ignite26.com" className="hover:text-[var(--color-accent)] transition-colors mt-2">codex.club@quantumeducation.in</a>
+          <a href="mailto:codex.club@quantumeducation.in" className="hover:text-[var(--color-accent)] transition-colors mt-2">codex.club@quantumeducation.in</a>
+          <a href="mailto:velocityclub@quantumuniversity.edu.in" className="hover:text-[var(--color-accent)] transition-colors">velocityclub@quantumuniversity.edu.in</a>
         </div>
       </div>
       

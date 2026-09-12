@@ -40,7 +40,7 @@ const MobileItem = ({ item, isLast }) => {
       <div className={`relative z-10 w-3 h-3 rounded-full shrink-0 transition-transform duration-200 group-hover:scale-125 bg-[#050505] shadow-[0_0_0_4px_#050505] ${cfg.dot}`} />
       
       {/* Content */}
-      <div className="relative z-10 mt-4 text-center px-4 bg-[#050505] py-2 shadow-[0_0_0_4px_#050505] flex flex-col items-center border border-white/5 rounded-2xl w-full max-w-[280px]">
+      <div className="relative z-10 mt-4 text-center px-4 bg-black/40 backdrop-blur-md py-2 shadow-[0_4px_30px_rgba(0,0,0,0.1)] flex flex-col items-center border border-white/10 rounded-2xl w-full max-w-[280px]">
         {/* Time badge */}
         <span className={`inline-flex items-center gap-1 text-[11px] font-mono font-semibold px-2.5 py-0.5 rounded-full mb-2 ${cfg.badge}`}>
           {item.time}
@@ -109,7 +109,7 @@ const Schedule = () => {
 
       {/* Day Switcher — dates are on the buttons, no repeat needed below */}
       <div className="flex justify-center mb-10">
-        <div className="flex items-center gap-1 p-1 bg-[#111] border border-[var(--color-border-light)] rounded-xl">
+        <div className="flex items-center gap-1 p-1 bg-black/40 backdrop-blur-md border border-white/10 rounded-xl">
           {[
             { key: 'Day 1', label: 'Day 1', date: '15 Sep' },
             { key: 'Day 2', label: 'Day 2', date: '16 Sep' },
