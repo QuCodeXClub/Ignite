@@ -1,4 +1,5 @@
 import React from 'react';
+import { Flame } from 'lucide-react';
 import logo from '../assets/ignite-logo.svg';
 
 const Footer = () => {
@@ -6,9 +7,22 @@ const Footer = () => {
     <footer className="bg-[#050505] py-16 px-8 md:px-16 text-[var(--color-secondary-text)] font-sans relative z-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="col-span-1 md:col-span-2 flex flex-col gap-6">
-          <a href="#home" className="flex items-center gap-3">
-            <img src={logo} alt="Ignite Logo" className="h-8 w-auto grayscale brightness-0 invert opacity-80" />
-            <span className="font-['Space_Grotesk'] font-bold text-xl tracking-wide text-white">IGNITE<span className="text-[var(--color-accent)]">'26</span></span>
+          <a href="#home" className="flex items-center gap-4 hover:opacity-80 transition-opacity w-fit">
+            <img src={logo} alt="Ignite Logo" className="h-10 w-auto grayscale brightness-0 invert opacity-80" />
+            <span className="font-['Space_Grotesk'] font-bold text-2xl tracking-tighter text-white flex flex-col md:flex-row items-start md:items-center md:gap-2 leading-[0.85] md:leading-none">
+              <span>IGNITE</span>
+              <span className="flex items-center text-[var(--color-accent)]">
+                2
+                <span className="inline-flex items-center justify-center mx-0 -translate-y-[0.06em]">
+                  <Flame
+                    fill="currentColor"
+                    strokeWidth={0}
+                    className="w-[0.85em] h-[0.85em] drop-shadow-[0_0_10px_rgba(6,190,252,0.5)]"
+                  />
+                </span>
+                26
+              </span>
+            </span>
           </a>
           <p className="max-w-sm text-sm leading-relaxed">
             The premier tech-fest and Engineers' Day celebration. Building the future, one line of code at a time.

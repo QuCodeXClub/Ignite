@@ -44,10 +44,6 @@ const EventCard = ({ event, onClick }) => {
             <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 flex-shrink-0">{getCategoryIcon(event.category)}</span>
             <span className="truncate max-w-[60px] sm:max-w-none">{event.category}</span>
           </div>
-          {/* Day badge */}
-          <div className="absolute top-2.5 right-2.5 bg-[var(--color-accent)]/15 border border-[var(--color-accent)]/30 text-[var(--color-accent)] text-[9px] sm:text-[10px] font-mono font-bold px-2 py-0.5 rounded-full">
-            {event.day}
-          </div>
         </div>
       )}
 

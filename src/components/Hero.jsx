@@ -53,17 +53,20 @@ const Hero = () => {
 
         {/* Heading: IGNITE 2026 */}
         <div>
-          <h1 className="font-['Space_Grotesk'] font-black leading-[0.88] tracking-[-3px] text-white text-5xl sm:text-6xl md:text-7xl xl:text-8xl flex items-center flex-wrap">
-            IGNITE 2
-            <span className="inline-flex items-center justify-center -mx-0.5 -translate-y-[0.06em]">
-              <Flame
-                fill="var(--color-accent)"
-                color="var(--color-accent)"
-                strokeWidth={0}
-                className="w-[0.82em] h-[0.82em] drop-shadow-[0_0_20px_rgba(6,190,252,0.9)]"
-              />
+          <h1 className="font-['Space_Grotesk'] font-black leading-[0.88] tracking-[-3px] text-white text-5xl sm:text-6xl md:text-7xl xl:text-8xl flex flex-col md:flex-row items-start md:items-center md:gap-4">
+            <span>IGNITE</span>
+            <span className="flex items-center">
+              2
+              <span className="inline-flex items-center justify-center -mx-0.5 -translate-y-[0.06em]">
+                <Flame
+                  fill="var(--color-accent)"
+                  color="var(--color-accent)"
+                  strokeWidth={0}
+                  className="w-[0.82em] h-[0.82em] drop-shadow-[0_0_20px_rgba(6,190,252,0.9)]"
+                />
+              </span>
+              26
             </span>
-            26
           </h1>
           <p className="font-['Space_Grotesk'] font-bold text-xl sm:text-2xl md:text-3xl text-[var(--color-accent)] tracking-tight mt-1.5">
             {hero.subheading}
