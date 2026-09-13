@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="col-span-1 md:col-span-2 flex flex-col gap-6">
           <a href="#home" className="flex items-center gap-4 hover:opacity-80 transition-opacity w-fit">
-            <img src={logo} alt="Ignite Logo" className="h-10 w-auto grayscale brightness-0 invert opacity-80" />
+            <img src={logo} alt="Ignite Logo" className="h-14 " />
             <span className="font-['Space_Grotesk'] font-bold text-2xl tracking-tighter text-white flex flex-col md:flex-row items-start md:items-center md:gap-2 leading-[0.85] md:leading-none">
               <span>IGNITE</span>
               <span className="flex items-center text-[var(--color-accent)]">
