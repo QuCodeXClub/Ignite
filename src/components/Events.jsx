@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom';
 import { Terminal, Gamepad2, Presentation, Lightbulb, MapPin, ExternalLink, X, Clock } from 'lucide-react';
 import data from '../data/data.json';
 import logo from '../assets/ignite-logo.svg';
+import ZoomableImage from './ZoomableImage';
 
 const getCategoryIcon = (category) => {
   switch (category?.toLowerCase()) {
@@ -142,7 +143,7 @@ const EventModal = ({ event, onClose }) => {
           {event.image && (
             <div className="w-full relative shrink-0 aspect-video md:aspect-[21/9]">
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/50 to-transparent z-10"></div>
-              <img 
+              <ZoomableImage 
                 src={event.image} 
                 alt={event.name} 
                 className="w-full h-full object-cover"

@@ -5,6 +5,7 @@ import quantumLogo from '../assets/quantum-logo.svg';
 import quIcon from '../assets/qu-icon.svg';
 import codexLogo from '../assets/codex-logo.svg';
 import velocityLogo from '../assets/velocity-logo.svg';
+import ZoomableImage from './ZoomableImage';
 
 const Hero = () => {
   const hero = data.hero;
@@ -140,7 +141,7 @@ const Hero = () => {
                 className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden shrink-0 border border-white/10"
                 style={{ transform: `rotate(${[-2, 1.5, -1, 2][i] ?? 0}deg)` }}
               >
-                <img
+                <ZoomableImage
                   src={src}
                   alt={`Event photo ${i + 1}`}
                   className="w-full h-full object-cover"
