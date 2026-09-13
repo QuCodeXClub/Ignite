@@ -8,13 +8,13 @@ import osen from '../assets/osen-logo.svg';
 import unstop from '../assets/unstop-logo.svg';
 
 const sponsors = [
-  { name: 'HP', logo: hp },
-  { name: 'GeeksforGeeks', logo: gfg },
-  { name: 'CodeCrafters', logo: codecrafters },
-  { name: 'InterviewBuddy', logo: interviewBuddy },
-  { name: 'Memcode', logo: memcode },
-  { name: 'OSEN', logo: osen },
-  { name: 'Unstop', logo: unstop },
+  { name: 'HP', logo: hp, url: 'https://www.hp.com' },
+  { name: 'GeeksforGeeks', logo: gfg, url: 'https://www.geeksforgeeks.org' },
+  { name: 'CodeCrafters', logo: codecrafters, url: 'https://codecrafters.io' },
+  { name: 'InterviewBuddy', logo: interviewBuddy, url: 'https://interviewbuddy.in' },
+  { name: 'Memcode', logo: memcode, url: 'https://memcode.com' },
+  { name: 'OSEN', logo: osen, url: 'https://osen.in' },
+  { name: 'Unstop', logo: unstop, url: 'https://unstop.com' },
 ];
 
 const Sponsors = () => (
@@ -37,7 +37,7 @@ const Sponsors = () => (
         {sponsors.map((sponsor) => (
           <a
             key={sponsor.name}
-            href="#"
+            href={sponsor.url}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-[140px] h-[110px] md:w-[160px] md:h-[120px] bg-black/40 backdrop-blur-md border border-white/10 rounded-xl hover:-translate-y-1.5 hover:border-[var(--color-accent)] hover:shadow-[0_8px_24px_rgba(6,190,252,0.12)] transition-all duration-300 group p-5"
