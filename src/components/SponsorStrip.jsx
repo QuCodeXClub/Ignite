@@ -14,8 +14,8 @@ const logos = [
   { name: 'GeeksforGeeks', src: gfg, url: 'https://www.geeksforgeeks.org' },
   { name: 'CodeCrafters', src: codecrafters, url: 'https://codecrafters.io' },
   { name: 'InterviewBuddy', src: interviewBuddy, url: 'https://interviewbuddy.in' },
-  { name: 'Memcode', src: memcode, url: 'https://memcode.com' },
-  { name: 'OSEN', src: osen, url: 'https://osen.in' },
+  { name: 'Memcode', src: memcode, url: 'https://memcode.in' },
+  { name: 'OSEN', src: osen, url: 'https://osen.live/' },
   { name: 'Unstop', src: unstop, url: 'https://unstop.com' },
 ];
 

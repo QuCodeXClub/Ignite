@@ -12,8 +12,8 @@ const sponsors = [
   { name: 'GeeksforGeeks', logo: gfg, url: 'https://www.geeksforgeeks.org' },
   { name: 'CodeCrafters', logo: codecrafters, url: 'https://codecrafters.io' },
   { name: 'InterviewBuddy', logo: interviewBuddy, url: 'https://interviewbuddy.in' },
-  { name: 'Memcode', logo: memcode, url: 'https://memcode.com' },
-  { name: 'OSEN', logo: osen, url: 'https://osen.in' },
+  { name: 'Memcode', logo: memcode, url: 'https://memcode.in' },
+  { name: 'OSEN', logo: osen, url: 'https://osen.live/' },
   { name: 'Unstop', logo: unstop, url: 'https://unstop.com' },
 ];
 
