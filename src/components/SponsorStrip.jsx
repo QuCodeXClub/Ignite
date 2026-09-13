@@ -10,13 +10,13 @@ import osen from '../assets/osen-logo.svg';
 import unstop from '../assets/unstop-logo.svg';
 
 const logos = [
-  { name: 'HP', src: hp },
-  { name: 'GeeksforGeeks', src: gfg },
-  { name: 'CodeCrafters', src: codecrafters },
-  { name: 'InterviewBuddy', src: interviewBuddy },
-  { name: 'Memcode', src: memcode },
-  { name: 'OSEN', src: osen },
-  { name: 'Unstop', src: unstop },
+  { name: 'HP', src: hp, url: 'https://www.hp.com' },
+  { name: 'GeeksforGeeks', src: gfg, url: 'https://www.geeksforgeeks.org' },
+  { name: 'CodeCrafters', src: codecrafters, url: 'https://codecrafters.io' },
+  { name: 'InterviewBuddy', src: interviewBuddy, url: 'https://interviewbuddy.in' },
+  { name: 'Memcode', src: memcode, url: 'https://memcode.in' },
+  { name: 'OSEN', src: osen, url: 'https://osen.live/' },
+  { name: 'Unstop', src: unstop, url: 'https://unstop.com' },
 ];
 
 const SponsorStrip = () => (
@@ -36,7 +36,7 @@ const SponsorStrip = () => (
       <div className="flex-1 overflow-x-auto overflow-y-hidden scrollbar-none">
         <div className="flex items-center gap-8 min-w-max md:min-w-0 md:justify-between py-0.5">
           {logos.map((logo) => (
-            <a key={logo.name} href="#" target="_blank" rel="noopener noreferrer" className="shrink-0">
+            <a key={logo.name} href={logo.url} target="_blank" rel="noopener noreferrer" className="shrink-0">
               <img
                 src={logo.src}
                 alt={logo.name}
