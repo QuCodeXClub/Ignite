@@ -44,7 +44,8 @@
       "venue": "Central Library",
       "description": "Project Expo is a flagship event organized under Ignite 2026 on the occasion of PGSJ, where every department gets an opportunity to showcase its best projects, innovative models, working prototypes, and creative posters. Departments will compete for the top prizes, celebrating innovation, technical knowledge, creativity, and teamwork. Every participant will receive a certificate of participation. The expo provides students with a platform to present their ideas, gain practical exposure, improve communication and presentation skills, receive valuable feedback, and inspire others through their innovative work.",
       "category": "Exhibition",
-      "registrationLink": " https://forms.gle/hoAjF42YVcQzXTrVA"
+      "buttonText": "Visit",
+      "registrationLink": "https://qucodex.com/events/6a93fbf3ee4a0c6f6e105957"
     },
     {
       "id": "hp-exhibition",
@@ -77,7 +78,7 @@
       "name": "SIH Webinar",
       "date": "16 Sep 2026",
       "day": "Day 2",
-      "time": "10:00 AM – 11:00 AM",
+      "time": "12:00 PM – 2:00 PM",
       "venue": "Unity Hall",
       "description": "SIH Webinar will be organized by Codex Club for students and teams qualified for the Smart India Hackathon (SIH). The session will be led by an SIH-qualified team that was also a winner at SIH 2025, giving participants the opportunity to learn directly from their experience. The team will share practical insights on problem-solving, project development, pitching, team strategy, and hackathon preparation. It will also be an interactive session, allowing participants to ask questions, discuss challenges, and gain valuable guidance for the next stage of SIH.",
       "category": "Webinar",
@@ -94,7 +95,7 @@
       "venue": "Shyamji Auditorium",
       "description": "The BGMI & Free Fire Tournament at IGNITE 2026 brings together gaming enthusiasts for an electrifying esports experience. Players will compete in intense battles that challenge their strategy, teamwork, reflexes, and decision-making skills. Whether you dominate the battlefield in BGMI or thrive in the fast-paced world of Free Fire, this is your chance to showcase your gaming skills and compete for glory. Gear up, assemble your squad, and get ready for an unforgettable gaming showdown at IGNITE 2026!",
       "category": "Gaming",
-      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSctHTe8zMRGIGfFZHWypHXckSlM5sLJdY0lvOglJzPHjE3gpw/viewform?usp=publish-editor"
+      "registrationLink": ""
     },
     {
       "id": "hp-exhibition-day-2",
@@ -114,12 +115,12 @@
       "image": "https://res.cloudinary.com/fswmfdcp/image/upload/v1789281864/WhatsApp_Image_2026-09-13_at_12.07.15_PM_zltezy.webp",
       "name": "Technical Treasure Hunt",
       "date": "16 Sep 2026",
-      "day": "Day 1",
+      "day": "Day 2",
       "time": "5:00 PM – 7:00 PM",
       "venue": "Campus Wide",
       "description": "Technical Treasure Hunt is an exciting challenge designed exclusively for hostelers, combining technology, logic, teamwork, and quick thinking. Participants will solve a series of technical clues, puzzles, and challenges to uncover the final treasure. The event encourages problem-solving, creativity, and collaboration in a fun and competitive environment. Get ready to team up with your friends, test your skills, and experience an unforgettable adventure filled with excitement, learning, and friendly competition!",
       "category": "Fun",
-      "registrationLink": "https://forms.gle/KMbKKBmsJLXqqjtZ8"
+      "registrationLink": ""
     }
   ],
   "schedule": [
@@ -168,18 +169,8 @@
       "venue": "Respective Venues",
       "type": "judging"
     },
-    
     {
       "id": "s6",
-      "day": "Day 1",
-      "date": "16 Sep 2026",
-      "time": "5:00 PM – 7:00 PM",
-      "activity": "Technical Treasure Hunt",
-      "venue": "Campus Wide",
-      "type": "event"
-    },
-    {
-      "id": "s7",
       "day": "Day 2",
       "date": "16 Sep 2026",
       "time": "10:00 AM – 12:00 PM",
@@ -189,26 +180,26 @@
     },
     
     {
-      "id": "s8",
+      "id": "s7",
       "day": "Day 2",
       "date": "16 Sep 2026",
-      "time": "10:00 AM – 11:00 AM",
+      "time": "12:00 PM – 2:00 PM",
       "activity": "SIH Webinar",
       "venue": "Unity Hall",
       "type": "event"
     },
     {
-      "id": "s9",
+      "id": "s8",
       "day": "Day 2",
       "date": "16 Sep 2026",
       "time": "12:00 PM – 3:00 PM",
-      "activity": "BGMI Tournament",
+      "activity": "BGMI & FF Tournament",
       "venue": "Shyamji Auditorium",
       "type": "event"
     },
     
     {
-      "id": "s10",
+      "id": "s9",
       "day": "Day 2",
       "date": "16 Sep 2026",
       "time": "12:00 PM – 4:00 PM",
@@ -217,13 +208,22 @@
       "type": "event"
     },
     {
-      "id": "s11",
+      "id": "s10",
       "day": "Day 2",
       "date": "16 Sep 2026",
       "time": "4:00 PM – 5:00 PM",
       "activity": "Valedictory & Prize Distribution",
       "venue": "Shyamji Auditorium",
       "type": "ceremony"
+    },    
+    {
+      "id": "s11",
+      "day": "Day 2",
+      "date": "16 Sep 2026",
+      "time": "5:00 PM – 7:00 PM",
+      "activity": "Technical Treasure Hunt",
+      "venue": "Campus Wide",
+      "type": "event"
     }
   ]
 }
